@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Container maxW="container.xl" p="0">
+      <Container maxW="container.xl" pb="24">
         <Flex width="100%" flexFlow={{ base: 'column-reverse', md: 'row' }} alignItems={{ md: 'center' }} p="0">
           <Box maxW={{ base: '100%', md: '50%' }} textAlign="left">
             <Heading fontSize="5xl" fontWeight="black" lineHeight="130%">
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
               </LinkBox>
               <LinkBox>
                 <LinkOverlay href="https://vongnyuksoon2000.gitbook.io/simplemail/api-endpoints/send-email" isExternal>
-                  <Button borderRadius="14" size="lg" bgColor="transparent" colorScheme="" color="gray.500" ml="2">View API docs</Button>
+                  <Button borderRadius="14" size="lg" bgColor="transparent" colorScheme="" color="gray.500" ml="1">View API docs</Button>
                 </LinkOverlay>
               </LinkBox>
             </Flex>
