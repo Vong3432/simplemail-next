@@ -21,16 +21,18 @@ const Home: NextPage = () => {
             <Text fontSize="xl" pt="4" lineHeight="200%" color="gray.500">
               Integrate email notification in your side project by sending API request.
             </Text>
-            <LinkBox>
-              <Flex mt="12">
+            <Flex mt="12">
+              <LinkBox>
                 <LinkOverlay href="https://vongnyuksoon2000.gitbook.io/simplemail/" isExternal>
                   <Button borderRadius="14" size="lg" colorScheme="blue">Get a tour</Button>
                 </LinkOverlay>
+              </LinkBox>
+              <LinkBox>
                 <LinkOverlay href="https://vongnyuksoon2000.gitbook.io/simplemail/api-endpoints/send-email" isExternal>
                   <Button borderRadius="14" size="lg" bgColor="transparent" colorScheme="" color="gray.500" ml="2">View API docs</Button>
                 </LinkOverlay>
-              </Flex>
-            </LinkBox>
+              </LinkBox>
+            </Flex>
           </Box>
           <Box ml="auto" alignItems="center" maxW={{ base: '100%', md: '50%' }} my="12">
             <Image maxW="500px" maxH="500px" w="100%" h="100%" objectFit="contain" src="/assets/graphic/bot.png" />
