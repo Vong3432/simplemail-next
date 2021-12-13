@@ -16,4 +16,3 @@ workflows:
             # to see live static HTML site
             - store_artifacts:
                 path: coverage
-            - run: npm run check-coverage-limits
