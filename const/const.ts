@@ -1,0 +1,1 @@
+export const API_URL = "https://simplemail-nodejs.herokuapp.com/send-email"
