@@ -1,6 +1,5 @@
-import { Text, Container, Heading, Button, Flex, Image, Box, LinkOverlay, LinkBox, ButtonGroup, useMediaQuery } from '@chakra-ui/react'
+import { Text, Container, Heading, Button, Flex, Image, Box, LinkOverlay, LinkBox, useMediaQuery } from '@chakra-ui/react'
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import React from 'react'
 
 const Home: NextPage = () => {

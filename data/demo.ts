@@ -46,12 +46,12 @@ export const basicParameters: Parameter[] = [
         name: 'smtp_user',
         description: 'The email of your Gmail account.',
         isRequired: true,
-        defaultText: "abc@gmail.com"
+        defaultText: ""
     },
     {
         name: 'smtp_pass',
         description: 'The app password of your Gmail account.',
         isRequired: true,
-        defaultText: "..."
+        defaultText: ""
     },
 ]

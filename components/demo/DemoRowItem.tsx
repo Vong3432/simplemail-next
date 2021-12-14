@@ -1,8 +1,6 @@
 import { Flex, Heading, Spacer, Icon, Text } from '@chakra-ui/react'
-import { useRouter } from 'next/dist/client/router'
-import React, { useCallback, useContext } from 'react'
+import React, { useContext } from 'react'
 import { IconType } from 'react-icons'
-import { HiChevronRight } from 'react-icons/hi'
 import { DemoContext } from '../../context/DemoContext'
 
 export interface DemoRowItemProps {
@@ -20,16 +18,10 @@ const DemoRowItem: React.FC<DemoRowItemProps> = (props) => {
     // variables
     const isSelected = demoContext?.currentDemo?.route === route
 
-    // hooks
-    const router = useRouter()
-
     // functions
-    const onPressed = useCallback(
-        () => {
-            demoContext?.setCurrentDemo(props)
-        },
-        [route],
-    )
+    const onPressed = () => {
+        demoContext?.setCurrentDemo(props)
+    }
 
     return (
         <Flex onClick={onPressed} border={"4px"} borderColor={isSelected ? "blue.500" : "gray.200"} cursor={'pointer'} mb={'2'} alignItems={"center"} p={"6"} borderRadius={"xl"} bg={"white"}>

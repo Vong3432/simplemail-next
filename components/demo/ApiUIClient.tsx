@@ -1,11 +1,11 @@
 import { Box, Flex, Tag, Spacer, Button, Text, Heading, Divider, FormControl, FormLabel, Input, FormHelperText, SkeletonText, Code } from '@chakra-ui/react'
 import React, { useContext, useState } from 'react'
-import { useForm, SubmitHandler } from 'react-hook-form'
+import { useForm } from 'react-hook-form'
 import { HiPlay } from 'react-icons/hi'
 import { API_URL } from '../../const/const'
 import { DemoContext } from '../../context/DemoContext'
-import { basicParameters, Parameter } from '../../data/demo'
-import axios, { AxiosError } from 'axios'
+import { basicParameters } from '../../data/demo'
+import axios from 'axios'
 
 interface ApiUIClientForm {
     [key: string]: any
